@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class HelloWorld{
+
+     public static void main(String []args){
+
+         
+       Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Hello. How many cups of lemonade do you want?");
+
+        	int count = scan.nextInt();
+
+        
+        double cost = 2.50;
+
+        	double total = count * cost;
+
+        
+        if(count < 0){
+
+            System.out.println("Go away.");
+
+        } else {
+
+            System.out.println("Total: $" + total);
+           
+        }
+
+     }
+
+}
